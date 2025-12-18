@@ -1,12 +1,18 @@
-name: CI
+name: Deploy Demo to GitHub Pages
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'apps/demo/**'
+      - '.github/workflows/deploy-demo.yml'
   pull_request:
     branches:
       - main
+    paths:
+      - 'apps/demo/**'
+      - '.github/workflows/deploy-demo.yml'
 
 permissions:
   contents: read
@@ -55,3 +61,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
