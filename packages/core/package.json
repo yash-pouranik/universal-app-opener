@@ -1,6 +1,6 @@
 {
   "name": "universal-app-opener",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A zero-dependency library to generate deep links from HTTP URLs",
   "license": "MIT",
   "main": "./dist/index.js",
@@ -14,7 +14,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "build": "tsup",
@@ -34,6 +35,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/mdsaban/universal-app-opener.git"
+  },
+  "homepage": "https://github.com/mdsaban/universal-app-opener#readme",
+  "bugs": {
+    "url": "https://github.com/mdsaban/universal-app-opener/issues"
   },
   "devDependencies": {
     "tsup": "^8.0.0",
