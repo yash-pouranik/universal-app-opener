@@ -1,7 +1,7 @@
 import { DeepLinkHandler } from '../types';
 
 export const redditHandler: DeepLinkHandler = {
-  match: (url) => url.match(/^(?:https?:\/\/)?(?:\w+\.)?reddit\.com\/(u|user|r)\/([^/?]+)/),
+  match: (url) => url.match(/^(?:https?:\/\/)?(?:[\w-]+\.)?reddit\.com\/(u|user|r)\/([^/?#]+)/i),
 
   build: (webUrl, match) => {
     const type = match[1]; // u | user | r
